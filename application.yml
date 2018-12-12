@@ -3,6 +3,9 @@
 management:
   security:
     enabled: false
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
 
 # jwt相关的配置
 token:
