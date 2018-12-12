@@ -28,7 +28,7 @@ spring:
       percentage: 1.0
   # 2、接口调用信息推送到这个zipkin服务
   zipkin: 
-    base-url: http://zipkin:9411
+    base-url: http://zipkin:9410
 
   cloud:
     loadbalancer:
