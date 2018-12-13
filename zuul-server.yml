@@ -9,8 +9,8 @@ server:
 zuul:
   # 代理普通http请求的超时时间
   host:
-    socket-timeout-millis: 2000
-    connect-timeout-millis: 1000
+    socket-timeout-millis: 5000
+    connect-timeout-millis: 5000
     # http连接池大小
     maxTotalConnections: 200
     # 每个host最大连接数
@@ -52,7 +52,7 @@ zuul:
 
 ribbon:
   # 配置ribbon默认的超时时间
-  ConnectTimeout: 1000
+  ConnectTimeout: 5000
   ReadTimeout: 3000
   # 是否开启重试
   OkToRetryOnAllOperations: true
@@ -72,7 +72,7 @@ hystrix:
         isolation:
           thread:
             # 命令执行超时时间
-            timeoutInMilliseconds: 2000
+            timeoutInMilliseconds: 5000
 
 # 以下是自定义的配置，配置的值会被注入到TonyConfigurationBean这个类
 tony:
