@@ -8,9 +8,9 @@ spring:
   datasource:
     type: org.apache.tomcat.jdbc.pool.DataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://mysql:3306/uaa-db?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: 12345678
+    url: jdbc:mysql://${mysql_host}:3306/uaa-db?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: ${mysql_username}
+    password: ${mysql_password}
   jpa:
     properties:
       hibernate:
